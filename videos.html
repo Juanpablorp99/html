@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favico.png" type="image/x-icon">
+    <title>Libertad</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 5px;
+            text-align: center;
+            clear: both;
+        
+        }
+        .video-container {
+            width: 640px;
+            height: 360px;
+            position: relative;
+            overflow: hidden;
+        }
+        .video-container video {
+            border-radius: 2%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LIBERTAD</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="libros.html">Libros</a></li>
+                <li><a href="videos.html" class="active">Videos</a></li>
+                <li><a href="contacto.html">Contaco</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <video width="640" height="360" controls poster="assets/img/hans.png">
+            <source src="assets/video/hanshermanndemocracia.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <footer class="footer">
+        <p>
+            <small>derechos reservados &copy; 2024</small>
+        </p>
+    </footer>
+</body>
+
+</html>
